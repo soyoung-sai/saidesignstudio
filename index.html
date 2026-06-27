@@ -1,239 +1,192 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Sai Design Studio</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
 <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+  background: #f5f5f5;
+  color: #160b0b;
 }
 
-body{
-
-font-family:'Inter',sans-serif;
-background:#fff;
-color:#111;
-line-height:1.6;
-
+.page {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  background: #fff;
 }
 
-section{
-
-width:90%;
-max-width:1300px;
-margin:auto;
-
+.hero {
+  height: 100vh;
+  min-height: 760px;
+  position: relative;
+  padding: 120px 80px;
 }
 
-.hero{
-
-height:100vh;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-
+.logo {
+  font-size: 42px;
+  letter-spacing: -2.2px;
+  font-weight: 500;
 }
 
-.logo{
+.dot { color: #d63a2f; }
 
-font-size:78px;
-font-weight:300;
-letter-spacing:-2px;
-
+.nav {
+  position: absolute;
+  top: 125px;
+  right: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  font-size: 14px;
+  color: #777;
+  text-transform: uppercase;
 }
 
-.dot{
-
-color:#d91d1d;
-
+.intro {
+  position: absolute;
+  top: 330px;
+  left: 185px;
+  font-size: 14px;
+  line-height: 2.2;
+  color: #777;
+  font-weight: 500;
 }
 
-.subtitle{
-
-margin-top:45px;
-
-font-size:26px;
-font-weight:300;
-color:#555;
-
+.scroll {
+  position: absolute;
+  left: 80px;
+  bottom: 160px;
+  font-size: 15px;
+  color: #777;
+  line-height: 2.4;
+  font-weight: 500;
 }
 
-.scroll{
-
-margin-top:120px;
-
-font-size:13px;
-letter-spacing:4px;
-
-color:#999;
-
+.projects {
+  min-height: 100vh;
+  padding: 140px 80px 180px;
+  background: #fff;
 }
 
-.works{
-
-padding:180px 0;
-
+.project-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  column-gap: 64px;
+  align-items: start;
 }
 
-.title{
-
-font-size:16px;
-letter-spacing:4px;
-
-margin-bottom:80px;
-
+.project-info {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5;
+  font-weight: 500;
+  padding-top: 10px;
 }
 
-.project{
-
-padding:55px 0;
-
-border-top:1px solid #eee;
-
-display:flex;
-justify-content:space-between;
-
-font-size:30px;
-
-font-weight:300;
-
-transition:.3s;
-
+.project-title {
+  margin-bottom: 34px;
+  text-transform: uppercase;
+  color: #777;
 }
 
-.project:hover{
-
-padding-left:20px;
-
+.project-meta {
+  text-transform: uppercase;
 }
 
-footer{
-
-padding:220px 0 120px;
-
-border-top:1px solid #eee;
-
+.image-placeholder {
+  width: 100%;
+  height: 620px;
+  background: #d8c4c2;
 }
 
-.footer-title{
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 28px;
+    min-height: 680px;
+  }
 
-font-size:52px;
-font-weight:300;
+  .logo {
+    font-size: 32px;
+    letter-spacing: -1.6px;
+  }
 
-margin-bottom:40px;
+  .nav {
+    top: auto;
+    right: auto;
+    left: 28px;
+    bottom: 80px;
+    gap: 18px;
+  }
 
+  .intro {
+    left: 28px;
+    top: 210px;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+  .projects {
+    padding: 80px 28px 120px;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .image-placeholder {
+    height: 360px;
+  }
 }
-
-.info{
-
-font-size:18px;
-color:#666;
-
-line-height:2;
-
-}
-
 </style>
-
 </head>
 
 <body>
 
-<section class="hero">
+<main class="page">
 
-<div class="logo">
-Sai Design Studio<span class="dot">.</span>
-</div>
+  <section class="hero">
+    <div class="logo">Sai Design Studio<span class="dot">.</span></div>
 
-<div class="subtitle">
+    <nav class="nav">
+      <div>Project</div>
+      <div>Studio</div>
+      <div>Contact</div>
+    </nav>
 
-사람과 공간 사이,<br>
-머물고 싶은 공간을 만듭니다.
+    <div class="intro">
+      Interior Architecture<br />
+      Residential · Commercial
+    </div>
 
-</div>
+    <div class="scroll">
+      ↓<br />
+      Selected Projects
+    </div>
+  </section>
 
-<div class="scroll">
+  <section class="projects">
+    <div class="project-card">
+      <div class="project-info">
+        <div class="project-title">AETHER DOGO</div>
+        <div class="project-meta">
+          Private Stay<br />
+          Asan, Korea · 2026
+        </div>
+      </div>
 
-SCROLL
+      <div class="image-placeholder"></div>
+    </div>
+  </section>
 
-</div>
-
-</section>
-
-<section class="works">
-
-<div class="title">
-
-SELECTED WORKS
-
-</div>
-
-<div class="project">
-
-<span>Residential</span>
-
-<span>→</span>
-
-</div>
-
-<div class="project">
-
-<span>Pediatric Clinic</span>
-
-<span>→</span>
-
-</div>
-
-<div class="project">
-
-<span>Dogo Stay</span>
-
-<span>→</span>
-
-</div>
-
-<div class="project">
-
-<span>Commercial</span>
-
-<span>→</span>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="footer-title">
-
-Let's create meaningful spaces.
-
-</div>
-
-<div class="info">
-
-info@saidesignstudio.co.kr<br>
-
-041-911-5030<br>
-
-www.saidesignstudio.co.kr
-
-</div>
-
-</footer>
+</main>
 
 </body>
 </html>
