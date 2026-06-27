@@ -9,50 +9,44 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
-  background: #f5f5f5;
-  color: #160b0b;
-}
-
-.page {
-  width: min(1440px, 100%);
-  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   background: #fff;
+  color: #171717;
 }
 
 .hero {
-  height: 100vh;
-  min-height: 760px;
+  min-height: 90vh;
   position: relative;
-  padding: 120px 80px;
+  padding: 110px 80px;
 }
 
 .logo {
   font-size: 42px;
-  letter-spacing: -2.2px;
   font-weight: 500;
+  letter-spacing: -2px;
 }
 
-.dot { color: #d63a2f; }
+.dot { color: #c83a32; }
 
 .nav {
   position: absolute;
-  top: 125px;
+  top: 118px;
   right: 96px;
   display: flex;
   flex-direction: column;
-  gap: 38px;
-  font-size: 14px;
+  gap: 34px;
+  font-size: 13px;
   color: #777;
   text-transform: uppercase;
+  letter-spacing: .3px;
 }
 
 .intro {
   position: absolute;
-  top: 330px;
+  top: 315px;
   left: 185px;
   font-size: 14px;
-  line-height: 2.2;
+  line-height: 2.1;
   color: #777;
   font-weight: 500;
 }
@@ -60,72 +54,79 @@ body {
 .scroll {
   position: absolute;
   left: 80px;
-  bottom: 160px;
+  bottom: 95px;
   font-size: 15px;
   color: #777;
-  line-height: 2.4;
+  line-height: 2.3;
   font-weight: 500;
 }
 
 .projects {
-  min-height: 100vh;
-  padding: 140px 80px 180px;
-  background: #fff;
+  padding: 110px 80px 180px;
 }
 
 .project-card {
   display: grid;
   grid-template-columns: 220px 1fr;
-  column-gap: 64px;
+  column-gap: 60px;
   align-items: start;
+  margin-bottom: 160px;
 }
 
 .project-info {
+  padding-top: 8px;
   font-size: 14px;
+  line-height: 1.6;
   color: #777;
-  line-height: 1.5;
-  font-weight: 500;
-  padding-top: 10px;
 }
 
 .project-title {
-  margin-bottom: 34px;
-  text-transform: uppercase;
-  color: #777;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: .4px;
+  margin-bottom: 32px;
 }
 
 .project-meta {
-  text-transform: uppercase;
+  text-transform: none;
 }
 
-.image-placeholder {
-  width: 100%;
+.project-image {
   height: 620px;
   background: #d8c4c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: 60px 28px;
-    min-height: 680px;
+    min-height: 78vh;
+    padding: 58px 28px;
   }
 
   .logo {
-    font-size: 32px;
-    letter-spacing: -1.6px;
+    font-size: 31px;
+    letter-spacing: -1.5px;
   }
 
   .nav {
     top: auto;
     right: auto;
     left: 28px;
-    bottom: 80px;
+    bottom: 70px;
     gap: 18px;
+    font-size: 12px;
   }
 
   .intro {
+    top: 195px;
     left: 28px;
-    top: 210px;
+    font-size: 13px;
   }
 
   .scroll {
@@ -138,10 +139,10 @@ body {
 
   .project-card {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 34px;
   }
 
-  .image-placeholder {
+  .project-image {
     height: 360px;
   }
 }
@@ -150,43 +151,41 @@ body {
 
 <body>
 
-<main class="page">
+<section class="hero">
+  <div class="logo">Sai Design Studio<span class="dot">.</span></div>
 
-  <section class="hero">
-    <div class="logo">Sai Design Studio<span class="dot">.</span></div>
+  <nav class="nav">
+    <div>Project</div>
+    <div>Studio</div>
+    <div>Contact</div>
+  </nav>
 
-    <nav class="nav">
-      <div>Project</div>
-      <div>Studio</div>
-      <div>Contact</div>
-    </nav>
+  <div class="intro">
+    Interior Architecture<br>
+    Residential · Commercial
+  </div>
 
-    <div class="intro">
-      Interior Architecture<br />
-      Residential · Commercial
-    </div>
+  <div class="scroll">
+    ↓<br>
+    Selected Projects
+  </div>
+</section>
 
-    <div class="scroll">
-      ↓<br />
-      Selected Projects
-    </div>
-  </section>
-
-  <section class="projects">
-    <div class="project-card">
-      <div class="project-info">
-        <div class="project-title">AETHER DOGO</div>
-        <div class="project-meta">
-          Private Stay<br />
-          Asan, Korea · 2026
-        </div>
+<section class="projects">
+  <div class="project-card">
+    <div class="project-info">
+      <div class="project-title">AETHER DOGO</div>
+      <div class="project-meta">
+        Private Stay<br>
+        Asan, Korea · 2026
       </div>
-
-      <div class="image-placeholder"></div>
     </div>
-  </section>
 
-</main>
+    <div class="project-image">
+      Coming Soon
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
