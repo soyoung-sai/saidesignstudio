@@ -62,8 +62,8 @@ a {
 }
 
 .hero__content {
-  max-width: 760px;
-  margin-top: -8vh;
+    max-width: 720px;
+    margin-top: 3vh;
 }
 
 .hero__sub {
@@ -74,10 +74,11 @@ a {
 }
 
 .hero__title {
-  font-size: clamp(52px, 5vw, 82px);
-  line-height: 1.12;
-  font-weight: 300;
-  letter-spacing: -.055em;
+    font-size: clamp(38px, 3.8vw, 60px);
+    line-height: 1.22;
+    font-weight: 300;
+    letter-spacing: -0.045em;
+    max-width: 720px;
 }
 
 .hero__scroll {
@@ -100,10 +101,8 @@ a {
 }
 
 .philosophy__text {
-  font-size: clamp(40px, 5vw, 72px);
-  line-height: 1.35;
-  font-weight: 300;
-  letter-spacing: -.04em;
+    font-size: clamp(30px, 3.2vw, 50px);
+    line-height: 1.45;
 }
 
 /* =========================
