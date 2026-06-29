@@ -111,14 +111,14 @@ a {
 ========================= */
 
 .reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: all .9s ease;
+  opacity: 1;
+  transform: none;
+  transition: none;
 }
 
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 /* =========================
