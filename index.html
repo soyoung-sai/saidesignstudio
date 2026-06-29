@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sai Design Studio</title>
 
-  <link rel="stylesheet" href="CSS/style.css" />
+  <title>SAI Design Studio</title>
+  <meta
+    name="description"
+    content="SAI Design Studio는 사람과 공간 사이, 머물고 싶은 공간을 만듭니다."
+  />
+
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <header class="site-header">
-    <a href="index.html" class="logo">
-      Sai Design Studio<span class="dot">.</span>
-    </a>
+    <a href="#" class="site-logo">SAI DESIGN STUDIO</a>
 
-    <nav class="nav">
+    <nav class="site-nav" aria-label="Main navigation">
       <a href="#projects">Projects</a>
       <a href="#studio">Studio</a>
       <a href="#contact">Contact</a>
@@ -22,69 +25,45 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">Interior Architecture</p>
-        <p class="eyebrow">Residential & Commercial</p>
+    <section class="hero" aria-label="SAI Design Studio Hero">
+      <div class="hero__content">
+        <p class="hero__sub reveal">사람과 공간 사이,</p>
 
-        <h1>
-          머물고 싶은 공간을 만듭니다.<br />
-          사람과 공간 사이
+        <h1 class="hero__title reveal">
+          머물고 싶은 공간을<br />
+          만듭니다.
         </h1>
-
-        <p class="description">
-          사이디자인스튜디오는 과한 표현보다 필요한 만큼의 선,
-          적절한 여백, 안정적인 소재감, 그리고 오래 머물수록
-          편안한 비례를 중요하게 생각합니다.
-        </p>
       </div>
+
+      <a href="#philosophy" class="hero__scroll reveal" aria-label="Scroll to philosophy">
+        ↓
+      </a>
     </section>
 
-    <section id="projects" class="projects-section">
-      <div class="section-title">
-        <span>Selected Projects</span>
-        <h2>Our Recent Work</h2>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-image placeholder"></div>
-          <h3>AETHER DOGO</h3>
-          <p>Private Stay</p>
-          <p>Asan, Korea · 2026</p>
-        </article>
-
-        <article class="project-card">
-          <div class="project-image placeholder"></div>
-          <h3>RESIDENTIAL</h3>
-          <p>Apartment Interior</p>
-          <p>Cheonan, Korea · 2025</p>
-        </article>
-
-        <article class="project-card">
-          <div class="project-image placeholder"></div>
-          <h3>CLINIC</h3>
-          <p>Commercial</p>
-          <p>Cheonan, Korea · 2024</p>
-        </article>
-      </div>
+    <section class="philosophy" id="philosophy">
+      <p class="philosophy__text reveal">
+        오래 머물수록<br />
+        편안한 공간을 추구합니다.
+      </p>
     </section>
 
-    <section id="studio" class="studio-section">
-      <p>
-        Sai Design Studio는 사람의 생활과 공간의 분위기 사이에서
-        균형 있는 디자인을 만듭니다.
+    <section class="philosophy">
+      <p class="philosophy__text reveal">
+        절제된 선과 여백,<br />
+        균형 잡힌 비례를 바탕으로 합니다.
+      </p>
+    </section>
+
+    <section class="philosophy philosophy--detail">
+      <p class="philosophy__text reveal">
+        편안함은<br />
+        작은 디테일에서<br />
+        시작됩니다.
       </p>
     </section>
   </main>
 
-  <footer id="contact" class="footer">
-    <div>Sai Design Studio<span class="dot">.</span></div>
-    <div>Cheonan · Asan · Seoul · Korea</div>
-    <div>info@saidesignstudio.co.kr</div>
-    <div>@saidesign_studio</div>
-  </footer>
-
-  <script src="JS/main.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
+```
